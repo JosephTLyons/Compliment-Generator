@@ -7,7 +7,7 @@ master = Tk()
 master.title ("Compliment Generator")
 master.resizable (width = False, height = False)
 width  = 400
-height = 120
+height = 105
 master.minsize (width, height)
 master.maxsize (width, height)
 
