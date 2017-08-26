@@ -23,7 +23,8 @@ adjectives = "sexy", "beautiful", "astonishing", "fabulous", "extraordinary", "g
              "reasonable"
 nounsTwo   = "duck", "girl", "woman", "princess", "queen", "daisy", "invdividual", "intellect", "tulip", "koala bear", \
              "sex symbol", "specimen", "mermaid", "watermelon", "goose", "being", "goddess", "savant", "companion", \
-             "baby-maker", "heart-throb", "citizen", "genius", "baller", "badass", "marsupial", "unicorn"
+             "baby-maker", "heart-throb", "citizen", "genius", "baller", "badass", "marsupial", "unicorn", "hero", "saint", \
+             "legend", "god"
 
 # Create label
 nameLabel = Label(master, text = "Name: ")
