@@ -7,7 +7,7 @@ from Tkinter import *
 master = Tk()
 master.title ("Compliment Generator")
 master.resizable (width = False, height = False)
-width  = 420
+width  = 450
 height = 105
 master.minsize (width, height)
 master.maxsize (width, height)
