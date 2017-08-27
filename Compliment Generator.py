@@ -13,7 +13,7 @@ master.minsize (width, height)
 master.maxsize (width, height)
 
 # Create label
-nameLabel = Label(master, text = "Name: ")
+nameLabel = Label(master, text = "Name (optional): ")
 nameLabel.pack()
 
 # Create name entry box
