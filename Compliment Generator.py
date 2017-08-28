@@ -6,7 +6,6 @@ from Tkinter import *
 # Set up main window settings
 master = Tk()
 master.title ("Compliment Generator")
-master.resizable (width = False, height = False)
 width  = 450
 height = 105
 master.minsize (width, height)
