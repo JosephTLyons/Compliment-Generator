@@ -24,16 +24,16 @@ nameTextEntry.pack()
 complimentLabel = Label(master, text = "")
 
 def PrintCompliment():
+    nounsRandInt = randint(0, len(nouns) - 1)
+    adverbsRandInt = randint(0, len(adverbs) - 1)
+    adjectiveRandInt = randint(0, len(adjectives) - 1)
+    nounsTwoRandInt = randint(0, len(nounsTwo) - 1)
+
     if len(nameTextEntry.get()) == 0:
         compliment = "(" + nouns[nounsRandInt]
 
     else:
         compliment = "(" + nameTextEntry.get()
-
-    nounsRandInt     = randint(0, len(nouns) - 1)
-    adverbsRandInt   = randint(0, len(adverbs) - 1)
-    adjectiveRandInt = randint(0, len(adjectives) - 1)
-    nounsTwoRandInt  = randint(0, len(nounsTwo) - 1)
 
     compliment += "), you are a(n) (" + adverbs[adverbsRandInt] \
     + ") (" + adjectives[adjectiveRandInt] \
