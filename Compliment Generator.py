@@ -25,14 +25,19 @@ complimentLabel = Label(master, text = "")
 
 def PrintCompliment():
     if len(nameTextEntry.get()) == 0:
-        compliment = "(" + nouns[randint(0, len(nouns) - 1)]
+        compliment = "(" + nouns[nounsRandInt]
 
     else:
         compliment = "(" + nameTextEntry.get()
 
-    compliment += "), you are a(n) (" + adverbs[randint(0, len(adverbs) - 1)] \
-        + ") (" + adjectives[randint(0, len(adjectives) - 1)] \
-        + ") (" + nounsTwo[randint(0, len(nounsTwo) - 1)] + ")."
+    nounsRandInt     = randint(0, len(nouns) - 1)
+    adverbsRandInt   = randint(0, len(adverbs) - 1)
+    adjectiveRandInt = randint(0, len(adjectives) - 1)
+    nounsTwoRandInt  = randint(0, len(nounsTwo) - 1)
+
+    compliment += "), you are a(n) (" + adverbs[adverbsRandInt] \
+    + ") (" + adjectives[adjectiveRandInt] \
+    + ") (" + nounsTwo[nounsTwoRandInt] + ")."
 
     complimentLabel.config(text = compliment)
 
