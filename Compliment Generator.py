@@ -41,7 +41,7 @@ def PrintCompliment():
     complimentLabel.config(text = compliment)
 
 # Create button
-complimentButton = Button(master, text="Compliment", width="10", command=PrintCompliment)
+complimentButton = Button(master, text = "Compliment", width="10", command = PrintCompliment)
 complimentButton.pack()
 
 complimentLabel.pack()
