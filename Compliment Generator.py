@@ -19,21 +19,17 @@ def maleOption():
 
 # Create label
 nameLabel = Label(master, text = "Name (optional): ")
-nameLabel.pack()
 
 # Create name entry box
 nameTextEntry = Entry(master, justify = 'center')
-nameTextEntry.pack()
 
 #Create female checkbox
 femaleIsChecked = IntVar()
 femaleCheckbox = Checkbutton(master, text = "Female", command = femaleOption, variable = femaleIsChecked)
 femaleCheckbox.select()
-femaleCheckbox.pack()
 
 #Create male checkbox
 maleCheckbox = Checkbutton(master, text = "male", command = maleOption)
-maleCheckbox.pack()
 
 # Create label
 complimentLabel = Label(master, text = "")
@@ -73,8 +69,13 @@ def PrintCompliment():
 
 # Create button
 complimentButton = Button(master, text = "Compliment", width="10", command = PrintCompliment)
-complimentButton.pack()
 
+# Pack GUI components
+nameLabel.pack()
+nameTextEntry.pack()
+femaleCheckbox.pack()
+maleCheckbox.pack()
+complimentButton.pack()
 complimentLabel.pack()
 
 master.mainloop()
