@@ -10,9 +10,9 @@ adjectives = "sexy", "beautiful", "astonishing", "fabulous", "extraordinary", "g
              "resourceful", "swag-tastic", "cooperative", "exuberant", "productive", "stellar", "divine", "adventurous", \
              "fearless", "gregarious", "rational" , "sincere" , "witty", "versatile", "sociable", "pro-active", "practical", \
              "optimistic", "loyal", "imaginative", "humorous", "fearless", "dynamic", "determined", "diligent", "courteous", \
-             "reasonable", "tough", "smart", "energetic", ""
+             "reasonable", "tough", "smart", "energetic", "happy"
 
 nounsTwo   = "duck", "girl", "woman", "princess", "queen", "daisy", "invdividual", "intellect", "tulip", "koala bear", \
              "sex symbol", "specimen", "mermaid", "watermelon", "goose", "being", "goddess", "savant", "companion", \
              "baby-maker", "heart-throb", "citizen", "genius", "baller", "badass", "marsupial", "unicorn", "hero", "saint", \
-             "legend", "god", "godess", "dude", "rock star", "penguin", "otter"
+             "legend", "god", "goddess", "dude", "rock star", "penguin", "otter"
