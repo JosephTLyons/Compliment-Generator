@@ -16,8 +16,8 @@ adjectives = "sexy", "beautiful", "astonishing", "fabulous", "extraordinary", "g
              "optimistic", "loyal", "imaginative", "humorous", "fearless", "dynamic", "determined", "diligent", "courteous", \
              "reasonable", "tough", "smart", "energetic", "happy"
 
-feminineNounsTwo  = "girl", "woman", "princess", "queen", "mermaid", "baby-maker", "goddess",
-masculineNounsTwo = "god", "dude",
+feminineNounsTwo  = "girl", "woman", "princess", "queen", "mermaid", "baby-maker", "goddess"
+masculineNounsTwo = "god", "dude"
 neutralNounsTwo   = "duck", "daisy", "individual", "intellect", "citizen", "genius", "baller", "badass", "marsupial",\
                     "unicorn", "hero", "saint", "legend", "rock star", "penguin", "otter", "sex symbol", "specimen", \
                     "watermelon", "goose", "being", "savant", "companion", "heart-throb", "tulip", "koala bear"
