@@ -1,6 +1,10 @@
 # Words
-nouns      = "Baby", "Honey", "Love", "Sweety", "Pumpkin", "Boo-Boo", "Bae", "Girl", "Dearest", "Bbgrl", "Sugar", \
-             "Apple Dumpling"
+feminineNounsOne  = "Girl", "Bbgrl", "Apple Dumpling", "Sweety", "Bae", "Pumpkin", "Boo-Boo"
+masculineNounsOne = "Dude", "Bud", "Buddy", "Bro", "Daddy", "Bub", "Pal", "Sir", "Man"
+neutralNounsOne   = "Baby", "Honey", "Love", "Dearest", "Sugar"
+
+feminineNounsOne  += neutralNounsOne
+masculineNounsOne += neutralNounsOne
 
 adverbs    = "super", "extremely", "very", "especially", "really", "perfectly", "completely", "entirely", "incredibly"
 
@@ -12,7 +16,11 @@ adjectives = "sexy", "beautiful", "astonishing", "fabulous", "extraordinary", "g
              "optimistic", "loyal", "imaginative", "humorous", "fearless", "dynamic", "determined", "diligent", "courteous", \
              "reasonable", "tough", "smart", "energetic", "happy"
 
-nounsTwo   = "duck", "girl", "woman", "princess", "queen", "daisy", "invdividual", "intellect", "tulip", "koala bear", \
-             "sex symbol", "specimen", "mermaid", "watermelon", "goose", "being", "goddess", "savant", "companion", \
-             "baby-maker", "heart-throb", "citizen", "genius", "baller", "badass", "marsupial", "unicorn", "hero", "saint", \
-             "legend", "god", "goddess", "dude", "rock star", "penguin", "otter"
+feminineNounsTwo  = "girl", "woman", "princess", "queen", "mermaid", "baby-maker", "goddess",
+masculineNounsTwo = "god", "dude",
+neutralNounsTwo   = "duck", "daisy", "individual", "intellect", "citizen", "genius", "baller", "badass", "marsupial",\
+                    "unicorn", "hero", "saint", "legend", "rock star", "penguin", "otter", "sex symbol", "specimen", \
+                    "watermelon", "goose", "being", "savant", "companion", "heart-throb", "tulip", "koala bear"
+
+feminineNounsTwo  += neutralNounsTwo
+masculineNounsTwo += neutralNounsTwo

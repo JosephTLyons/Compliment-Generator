@@ -11,6 +11,12 @@ height = 105
 master.minsize (width, height)
 master.maxsize (width, height)
 
+def femaleOption():
+    maleCheckbox.deselect()
+
+def maleOption():
+    femaleCheckbox.deselect()
+
 # Create label
 nameLabel = Label(master, text = "Name (optional): ")
 nameLabel.pack()
@@ -19,26 +25,51 @@ nameLabel.pack()
 nameTextEntry = Entry(master, justify = 'center')
 nameTextEntry.pack()
 
+#Create female checkbox
+femaleIsChecked = IntVar()
+femaleCheckbox = Checkbutton(master, text = "Female", command = femaleOption, variable = femaleIsChecked)
+femaleCheckbox.select()
+femaleCheckbox.pack()
+
+#Create male checkbox
+maleCheckbox = Checkbutton(master, text = "male", command = maleOption)
+maleCheckbox.pack()
+
 # Create label
 complimentLabel = Label(master, text = "")
 
 def PrintCompliment():
-    nounsRandInt     = randint(0, len(nouns) - 1)
-    adverbsRandInt   = randint(0, len(adverbs) - 1)
-    adjectiveRandInt = randint(0, len(adjectives) - 1)
-    nounsTwoRandInt  = randint(0, len(nounsTwo) - 1)
+    feminineNounsOneRandInt  = randint(0, len(feminineNounsOne) - 1)
+    masculineNounsOneRandInt = randint(0, len(masculineNounsOne) - 1)
+    adverbsRandInt           = randint(0, len(adverbs) - 1)
+    adjectiveRandInt         = randint(0, len(adjectives) - 1)
+    feminineNounsTwoRandInt  = randint(0, len(feminineNounsTwo) - 1)
+    masculineNounsTwoRandInt = randint(0, len(masculineNounsTwo) - 1)
 
+    complimentText = "("
+
+    # If no name is specified, use a default noun
     if len(nameTextEntry.get()) == 0:
-        compliment = "(" + nouns[nounsRandInt]
+        if femaleIsChecked.get():
+            complimentText += feminineNounsOne[feminineNounsOneRandInt]
+
+        else:
+            complimentText += masculineNounsOne[masculineNounsOneRandInt]
 
     else:
-        compliment = "(" + nameTextEntry.get()
+        complimentText = "(" + nameTextEntry.get()
 
-    compliment += "), you are a(n) (" + adverbs[adverbsRandInt] \
-    + ") (" + adjectives[adjectiveRandInt] \
-    + ") (" + nounsTwo[nounsTwoRandInt] + ")."
+    complimentText += "), you are a(n) (" + adverbs[adverbsRandInt] + ") (" + adjectives[adjectiveRandInt] + ") ("
 
-    complimentLabel.config(text = compliment)
+    if femaleIsChecked.get():
+        complimentText += feminineNounsTwo[feminineNounsTwoRandInt]
+
+    else:
+        complimentText += masculineNounsTwo[masculineNounsTwoRandInt]
+
+    complimentText += ")."
+
+    complimentLabel.config(text = complimentText)
 
 # Create button
 complimentButton = Button(master, text = "Compliment", width="10", command = PrintCompliment)
