@@ -17,7 +17,7 @@ def femaleOption():
 def maleOption():
     femaleCheckbox.deselect()
 
-# Create label
+# Create name label
 nameLabel = Label(master, text = "Name (optional): ")
 
 # Create name entry box
@@ -31,7 +31,7 @@ femaleCheckbox.select()
 #Create male checkbox
 maleCheckbox = Checkbutton(master, text = "male", command = maleOption)
 
-# Create label
+# Create compliment label
 complimentLabel = Label(master, text = "")
 
 def PrintCompliment():
