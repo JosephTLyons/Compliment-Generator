@@ -6,10 +6,10 @@ from Tkinter import *
 # Set up main window settings
 master = Tk()
 master.title ("Compliment Generator")
-guiWidth  = 450
-guiHeight = 150
-master.minsize (guiWidth, guiHeight)
-master.maxsize (guiWidth, guiHeight)
+width  = 450
+height = 150
+master.minsize (width, height)
+master.maxsize (width, height)
 
 def femaleOption():
     maleCheckbox.deselect()
