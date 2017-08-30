@@ -63,7 +63,6 @@ def PrintCompliment():
     complimentText += ")."
 
     complimentLabel.config(text = complimentText)
-    print complimentLabel.winfo_width()
 
 # Create compliment button
 complimentButton = Button(master, text = "Compliment", width="10", command = PrintCompliment)
