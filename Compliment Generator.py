@@ -6,10 +6,7 @@ from Tkinter import *
 # Set up main window settings
 master = Tk()
 master.title ("Compliment Generator")
-width  = 450
-height = 150
-master.minsize (width, height)
-master.maxsize (width, height)
+master.resizable(width = FALSE, height = FALSE)
 
 def femaleOption():
     maleCheckbox.deselect()
@@ -32,7 +29,7 @@ femaleCheckbox.select()
 maleCheckbox = Checkbutton(master, text = "male", command = maleOption)
 
 # Create compliment label
-complimentLabel = Label(master, text = "")
+complimentLabel = Label(master, text = "", width = 50)
 
 def PrintCompliment():
     feminineNounsOneRandInt  = randint(0, len(feminineNounsOne) - 1)
@@ -66,16 +63,17 @@ def PrintCompliment():
     complimentText += ")."
 
     complimentLabel.config(text = complimentText)
+    print complimentLabel.winfo_width()
 
-# Create button
+# Create compliment button
 complimentButton = Button(master, text = "Compliment", width="10", command = PrintCompliment)
 
-# Pack GUI components
-nameLabel.pack()
-nameTextEntry.pack()
-femaleCheckbox.pack()
-maleCheckbox.pack()
-complimentButton.pack()
-complimentLabel.pack()
+# Add GUI components
+nameLabel.grid(row = 1, column = 1, columnspan = 2)
+nameTextEntry.grid(row = 2, column = 1, columnspan = 2)
+femaleCheckbox.grid(row = 3, column = 1)
+maleCheckbox.grid(row = 3, column = 2)
+complimentButton.grid(row = 4, column = 1, columnspan = 2)
+complimentLabel.grid(row = 5, column = 1, columnspan = 2)
 
 master.mainloop()
