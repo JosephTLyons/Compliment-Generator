@@ -1,5 +1,5 @@
 # Words
-feminineNounsOne  = "Girl", "Bbgrl", "Apple Dumpling", "Sweety", "Bae", "Pumpkin", "Boo-Boo"
+feminineNounsOne  = "Girl", "Bbgrl", "Apple Dumpling", "Sweety", "Sweetheart," "Bae", "Pumpkin", "Boo-Boo", "Darling"
 masculineNounsOne = "Dude", "Bud", "Buddy", "Bro", "Daddy", "Bub", "Pal", "Sir", "Man"
 neutralNounsOne   = "Baby", "Honey", "Love", "Dearest", "Sugar"
 
@@ -17,7 +17,7 @@ adjectives = "sexy", "beautiful", "astonishing", "fabulous", "extraordinary", "g
              "reasonable", "tough", "smart", "energetic", "happy"
 
 feminineNounsTwo  = "girl", "woman", "princess", "queen", "mermaid", "baby-maker", "goddess"
-masculineNounsTwo = "god", "dude"
+masculineNounsTwo = "god", "dude", "beefcake", "alpha male"
 neutralNounsTwo   = "duck", "daisy", "individual", "intellect", "citizen", "genius", "baller", "badass", "marsupial",\
                     "unicorn", "hero", "saint", "legend", "rock star", "penguin", "otter", "sex symbol", "specimen", \
                     "watermelon", "goose", "being", "savant", "companion", "heart-throb", "tulip", "koala bear"
