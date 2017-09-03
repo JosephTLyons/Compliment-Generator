@@ -26,7 +26,7 @@ femaleCheckbox = Checkbutton(master, text = "Female", command = femaleOption, va
 femaleCheckbox.select()
 
 #Create male checkbox
-maleCheckbox = Checkbutton(master, text = "male", command = maleOption)
+maleCheckbox = Checkbutton(master, text = "Male", command = maleOption)
 
 # Create compliment label
 complimentLabel = Label(master, text = "", width = 50)
