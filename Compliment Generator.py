@@ -65,7 +65,7 @@ def PrintCompliment():
     complimentLabel.config(text = complimentText)
 
 # Create compliment button
-complimentButton = Button(master, text = "Compliment", width="10", command = PrintCompliment)
+complimentButton = Button(master, text = "Compliment", width = "10", command = PrintCompliment)
 
 # Add GUI components
 nameLabel.grid(row = 1, column = 1, columnspan = 2)
