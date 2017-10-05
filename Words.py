@@ -1,5 +1,5 @@
 # Words
-feminineNounsOne  = "Girl", "Bbgrl", "Apple Dumpling", "Sweety", "Sweetheart," "Bae", "Pumpkin", "Boo-Boo", "Darling"
+feminineNounsOne  = "Girl", "Bbgrl", "Apple Dumpling", "Sweety", "Sweetheart", "Bae", "Pumpkin", "Boo-Boo", "Darling"
 masculineNounsOne = "Dude", "Bud", "Buddy", "Bro", "Daddy", "Bub", "Pal", "Sir", "Man"
 neutralNounsOne   = "Baby", "Honey", "Love", "Dearest", "Sugar"
 
