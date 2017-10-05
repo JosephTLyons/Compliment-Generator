@@ -21,7 +21,7 @@ nameLabel = Label(master, text = "Name (optional): ")
 nameTextEntry = Entry(master, justify = 'center')
 
 #Create female checkbox
-femaleIsChecked = IntVar()
+femaleIsChecked = BooleanVar()
 femaleCheckbox = Checkbutton(master, text = "Female", command = femaleOption, variable = femaleIsChecked)
 femaleCheckbox.select()
 
