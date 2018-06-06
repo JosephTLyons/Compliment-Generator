@@ -6,7 +6,8 @@ neutralNounsOne   = "Baby", "Honey", "Love", "Dearest", "Sugar"
 feminineNounsOne  += neutralNounsOne
 masculineNounsOne += neutralNounsOne
 
-adverbs    = "super", "extremely", "very", "especially", "really", "perfectly", "completely", "entirely", "incredibly"
+adverbs    = "super", "extremely", "very", "especially", "really", "perfectly", "completely", "entirely", "incredibly", \
+             "absolutely"
 
 adjectives = "sexy", "beautiful", "astonishing", "fabulous", "extraordinary", "gorgeous", "independent", "glowing", \
              "responsible", "passionate", "kind", "caring", "impressive", "marvelous", "stupendous", "confident", \
@@ -14,7 +15,7 @@ adjectives = "sexy", "beautiful", "astonishing", "fabulous", "extraordinary", "g
              "resourceful", "swag-tastic", "cooperative", "exuberant", "productive", "stellar", "divine", "adventurous", \
              "fearless", "gregarious", "rational" , "sincere" , "witty", "versatile", "sociable", "pro-active", "practical", \
              "optimistic", "loyal", "imaginative", "humorous", "fearless", "dynamic", "determined", "diligent", "courteous", \
-             "reasonable", "tough", "smart", "energetic", "happy"
+             "reasonable", "tough", "smart", "energetic", "happy", "selfless"
 
 feminineNounsTwo  = "girl", "woman", "princess", "queen", "mermaid", "baby-maker", "goddess"
 masculineNounsTwo = "god", "dude", "beefcake", "alpha male"
