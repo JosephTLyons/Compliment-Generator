@@ -22,16 +22,21 @@ class ComplimentGenerator:
         self.name_text_entry = Entry(self.master, justify="center")
 
         self.female_is_checked = IntVar()
-        self.female_checkbox = Checkbutton(self.master, text="Female", variable=self.female_is_checked)
+        self.female_checkbox = Checkbutton(self.master, text="Female", variable=self.female_is_checked, command=self.self_female)
         self.female_checkbox.select()
 
-        self.male_checkbox = Checkbutton(self.master, text="Male")
-
-        self.female_checkbox.config(command=self.male_checkbox.deselect)
-        self.male_checkbox.config(command=self.female_checkbox.deselect)
+        self.male_checkbox = Checkbutton(self.master, text="Male", command=self.self_male)
 
         self.compliment_button = Button(self.master, text="Compliment", width="10", command=self.print_compliment)
         self.compliment_label = Label(self.master, text="", width=50)
+
+    def self_female(self):
+        self.male_checkbox.deselect()
+        self.female_checkbox.select()
+
+    def self_male(self):
+        self.female_checkbox.deselect()
+        self.male_checkbox.select()
 
     def add_gui_components_to_window(self):
         self.name_label.grid(row=1, column=1, columnspan=2)
