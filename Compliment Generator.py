@@ -1,6 +1,8 @@
 #!/usr/bin/python
+
+import random
+
 from Words import *
-from random import randint
 from Tkinter import *
 
 
@@ -50,28 +52,19 @@ class ComplimentGenerator:
 
     def print_compliment(self):
         if self.female_is_checked.get():
-            feminine_nouns_one_rand_int = randint(0, len(feminine_nouns_one) - 1)
-            feminine_nouns_two_rand_int = randint(0, len(feminine_nouns_two) - 1)
-
-            noun_one = feminine_nouns_one[feminine_nouns_one_rand_int]
-            noun_two = feminine_nouns_two[feminine_nouns_two_rand_int]
+            noun_one = random.choice(feminine_nouns_one)
+            noun_two = random.choice(feminine_nouns_two)
         else:
-            masculine_nouns_one_rand_int = randint(0, len(masculine_nouns_one) - 1)
-            masculine_nouns_two_rand_int = randint(0, len(masculine_nouns_two) - 1)
-
-            noun_one = masculine_nouns_one[masculine_nouns_one_rand_int]
-            noun_two = masculine_nouns_two[masculine_nouns_two_rand_int]
+            noun_one = random.choice(masculine_nouns_one)
+            noun_two = random.choice(masculine_nouns_two)
 
         if len(self.name_text_entry.get()) != 0:
             noun_one = self.name_text_entry.get()
 
-        adverbs_rand_int = randint(0, len(adverbs) - 1)
-        adjective_rand_int = randint(0, len(adjectives) - 1)
-
         compliment_text = "({}), you are a(n) ({}) ({}) ({}).".format(
             noun_one,
-            adverbs[adverbs_rand_int],
-            adjectives[adjective_rand_int],
+            random.choice(adverbs),
+            random.choice(adjectives),
             noun_two
         )
 
