@@ -49,24 +49,24 @@ class ComplimentGenerator:
         self.compliment_label.grid(row=5, column=1, columnspan=2)
 
     def print_compliment(self):
-        feminine_nouns_one_rand_int = randint(0, len(feminine_nouns_one) - 1)
-        feminine_nouns_two_rand_int = randint(0, len(feminine_nouns_two) - 1)
-
-        masculine_nouns_one_rand_int = randint(0, len(masculine_nouns_one) - 1)
-        masculine_nouns_two_rand_int = randint(0, len(feminine_nouns_two) - 1)
-
-        adverbs_rand_int = randint(0, len(adverbs) - 1)
-        adjective_rand_int = randint(0, len(adjectives) - 1)
-
         if self.female_is_checked.get():
+            feminine_nouns_one_rand_int = randint(0, len(feminine_nouns_one) - 1)
+            feminine_nouns_two_rand_int = randint(0, len(feminine_nouns_two) - 1)
+
             noun_one = feminine_nouns_one[feminine_nouns_one_rand_int]
             noun_two = feminine_nouns_two[feminine_nouns_two_rand_int]
         else:
+            masculine_nouns_one_rand_int = randint(0, len(masculine_nouns_one) - 1)
+            masculine_nouns_two_rand_int = randint(0, len(masculine_nouns_two) - 1)
+
             noun_one = masculine_nouns_one[masculine_nouns_one_rand_int]
-            noun_two = feminine_nouns_two[masculine_nouns_two_rand_int]
+            noun_two = masculine_nouns_two[masculine_nouns_two_rand_int]
 
         if len(self.name_text_entry.get()) != 0:
             noun_one = self.name_text_entry.get()
+
+        adverbs_rand_int = randint(0, len(adverbs) - 1)
+        adjective_rand_int = randint(0, len(adjectives) - 1)
 
         compliment_text = "({}), you are a(n) ({}) ({}) ({}).".format(
             noun_one,
