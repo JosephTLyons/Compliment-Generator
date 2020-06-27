@@ -1,27 +1,156 @@
 # Words
-feminineNounsOne  = "Girl", "Bbgrl", "Apple Dumpling", "Sweety", "Sweetheart", "Bae", "Pumpkin", "Boo-Boo", "Darling"
-masculineNounsOne = "Dude", "Bud", "Buddy", "Bro", "Daddy", "Bub", "Pal", "Sir", "Man"
-neutralNounsOne   = "Baby", "Honey", "Love", "Dearest", "Sugar"
+feminineNounsOne = [
+    "Apple Dumpling",
+    "Bae",
+    "Bbgrl",
+    "Boo-Boo",
+    "Darling",
+    "Girl",
+    "Pumpkin",
+    "Sweetheart",
+    "Sweety",
+]
 
-feminineNounsOne  += neutralNounsOne
+masculineNounsOne = [
+    "Bro",
+    "Bub",
+    "Bud",
+    "Buddy",
+    "Daddy",
+    "Dude",
+    "Man",
+    "Pal",
+    "Sir",
+]
+
+neutralNounsOne = [
+    "Baby",
+    "Dearest",
+    "Honey",
+    "Love",
+    "Sugar",
+]
+
+feminineNounsOne += neutralNounsOne
 masculineNounsOne += neutralNounsOne
 
-adverbs    = "super", "extremely", "very", "especially", "really", "perfectly", "completely", "entirely", "incredibly", \
-             "absolutely"
+adverbs = [
+    "absolutely",
+    "completely",
+    "entirely",
+    "especially",
+    "extremely",
+    "incredibly",
+    "perfectly",
+    "really",
+    "super",
+    "very",
+]
 
-adjectives = "sexy", "beautiful", "astonishing", "fabulous", "extraordinary", "gorgeous", "independent", "glowing", \
-             "responsible", "passionate", "kind", "caring", "impressive", "marvelous", "stupendous", "confident", \
-             "courageous", "perfect", "honest", "charismatic", "breathtaking", "classy", "affectionate", "compassionate", \
-             "resourceful", "swag-tastic", "cooperative", "exuberant", "productive", "stellar", "divine", "adventurous", \
-             "fearless", "gregarious", "rational" , "sincere" , "witty", "versatile", "sociable", "pro-active", "practical", \
-             "optimistic", "loyal", "imaginative", "humorous", "fearless", "dynamic", "determined", "diligent", "courteous", \
-             "reasonable", "tough", "smart", "energetic", "happy", "selfless"
+adjectives = [
+    "adventurous",
+    "affectionate",
+    "astonishing",
+    "beautiful",
+    "breathtaking",
+    "caring",
+    "charismatic",
+    "classy",
+    "compassionate",
+    "confident",
+    "cooperative",
+    "courageous",
+    "courteous",
+    "determined",
+    "diligent",
+    "divine",
+    "dynamic",
+    "energetic",
+    "extraordinary",
+    "exuberant",
+    "fabulous",
+    "fearless",
+    "fearless",
+    "glowing",
+    "gorgeous",
+    "gregarious",
+    "happy",
+    "honest",
+    "humorous",
+    "imaginative",
+    "impressive",
+    "independent",
+    "kind",
+    "loyal",
+    "marvelous",
+    "optimistic",
+    "passionate",
+    "perfect",
+    "practical",
+    "pro-active",
+    "productive",
+    "rational" ,
+    "reasonable",
+    "resourceful",
+    "responsible",
+    "selfless",
+    "sexy",
+    "sincere" ,
+    "smart",
+    "sociable",
+    "stellar",
+    "stupendous",
+    "swag-tastic",
+    "tough",
+    "versatile",
+    "witty",
+]
 
-feminineNounsTwo  = "girl", "woman", "princess", "queen", "mermaid", "baby-maker", "goddess"
-masculineNounsTwo = "god", "dude", "beefcake", "alpha male"
-neutralNounsTwo   = "duck", "daisy", "individual", "intellect", "citizen", "genius", "baller", "badass", "marsupial",\
-                    "unicorn", "hero", "saint", "legend", "rock star", "penguin", "otter", "sex symbol", "specimen", \
-                    "watermelon", "goose", "being", "savant", "companion", "heart-throb", "tulip", "koala bear"
+feminineNounsTwo  = [
+    "baby-maker",
+    "girl",
+    "goddess",
+    "mermaid",
+    "princess",
+    "queen",
+    "woman",
+]
 
-feminineNounsTwo  += neutralNounsTwo
+masculineNounsTwo = [
+    "alpha male",
+    "beefcake",
+    "dude",
+    "god",
+]
+
+neutralNounsTwo = [
+    "badass",
+    "baller",
+    "being",
+    "citizen",
+    "companion",
+    "daisy",
+    "duck",
+    "genius",
+    "goose",
+    "heart-throb",
+    "hero",
+    "individual",
+    "intellect",
+    "koala bear"
+    "legend",
+    "marsupial",
+    "otter",
+    "penguin",
+    "rock star",
+    "saint",
+    "savant",
+    "sex symbol",
+    "specimen",
+    "tulip",
+    "unicorn",
+    "watermelon",
+]
+
+feminineNounsTwo += neutralNounsTwo
 masculineNounsTwo += neutralNounsTwo
