@@ -137,7 +137,7 @@ neutral_nouns_two = [
     "hero",
     "individual",
     "intellect",
-    "koala bear"
+    "koala bear",
     "legend",
     "marsupial",
     "otter",
