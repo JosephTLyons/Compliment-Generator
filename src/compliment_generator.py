@@ -2,7 +2,7 @@
 
 import random
 
-from Words import *
+from words import *
 from Tkinter import *
 
 

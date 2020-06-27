@@ -1,5 +1,13 @@
-# Words
-feminine_nouns_one = [
+neutral_nouns_one = [
+    "Baby",
+    "Dearest",
+    "Honey",
+    "Love",
+    "Sugar",
+]
+
+
+feminine_nouns_one = neutral_nouns_one + [
     "Apple Dumpling",
     "Bae",
     "Bbgrl",
@@ -11,7 +19,8 @@ feminine_nouns_one = [
     "Sweety",
 ]
 
-masculine_nouns_one = [
+
+masculine_nouns_one = neutral_nouns_one + [
     "Bro",
     "Bub",
     "Bud",
@@ -23,16 +32,55 @@ masculine_nouns_one = [
     "Sir",
 ]
 
-neutral_nouns_one = [
-    "Baby",
-    "Dearest",
-    "Honey",
-    "Love",
-    "Sugar",
+
+neutral_nouns_two = [
+    "badass",
+    "baller",
+    "being",
+    "citizen",
+    "companion",
+    "daisy",
+    "duck",
+    "genius",
+    "goose",
+    "heart-throb",
+    "hero",
+    "individual",
+    "intellect",
+    "koala bear",
+    "legend",
+    "marsupial",
+    "otter",
+    "penguin",
+    "rock star",
+    "saint",
+    "savant",
+    "sex symbol",
+    "specimen",
+    "tulip",
+    "unicorn",
+    "watermelon",
 ]
 
-feminine_nouns_one += neutral_nouns_one
-masculine_nouns_one += neutral_nouns_one
+
+feminine_nouns_two = neutral_nouns_two + [
+    "baby-maker",
+    "girl",
+    "goddess",
+    "mermaid",
+    "princess",
+    "queen",
+    "woman",
+]
+
+
+masculine_nouns_two = neutral_nouns_two + [
+    "alpha male",
+    "beefcake",
+    "dude",
+    "god",
+]
+
 
 adverbs = [
     "absolutely",
@@ -46,6 +94,7 @@ adverbs = [
     "super",
     "very",
 ]
+
 
 adjectives = [
     "adventurous",
@@ -105,52 +154,3 @@ adjectives = [
     "versatile",
     "witty",
 ]
-
-feminine_nouns_two  = [
-    "baby-maker",
-    "girl",
-    "goddess",
-    "mermaid",
-    "princess",
-    "queen",
-    "woman",
-]
-
-masculine_nouns_two = [
-    "alpha male",
-    "beefcake",
-    "dude",
-    "god",
-]
-
-neutral_nouns_two = [
-    "badass",
-    "baller",
-    "being",
-    "citizen",
-    "companion",
-    "daisy",
-    "duck",
-    "genius",
-    "goose",
-    "heart-throb",
-    "hero",
-    "individual",
-    "intellect",
-    "koala bear",
-    "legend",
-    "marsupial",
-    "otter",
-    "penguin",
-    "rock star",
-    "saint",
-    "savant",
-    "sex symbol",
-    "specimen",
-    "tulip",
-    "unicorn",
-    "watermelon",
-]
-
-feminine_nouns_two += neutral_nouns_two
-masculine_nouns_two += neutral_nouns_two
