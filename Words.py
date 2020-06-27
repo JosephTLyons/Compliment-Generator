@@ -1,5 +1,5 @@
 # Words
-feminineNounsOne = [
+feminine_nouns_one = [
     "Apple Dumpling",
     "Bae",
     "Bbgrl",
@@ -11,7 +11,7 @@ feminineNounsOne = [
     "Sweety",
 ]
 
-masculineNounsOne = [
+masculine_nouns_one = [
     "Bro",
     "Bub",
     "Bud",
@@ -23,7 +23,7 @@ masculineNounsOne = [
     "Sir",
 ]
 
-neutralNounsOne = [
+neutral_nouns_one = [
     "Baby",
     "Dearest",
     "Honey",
@@ -31,8 +31,8 @@ neutralNounsOne = [
     "Sugar",
 ]
 
-feminineNounsOne += neutralNounsOne
-masculineNounsOne += neutralNounsOne
+feminine_nouns_one += neutral_nouns_one
+masculine_nouns_one += neutral_nouns_one
 
 adverbs = [
     "absolutely",
@@ -106,7 +106,7 @@ adjectives = [
     "witty",
 ]
 
-feminineNounsTwo  = [
+feminine_nouns_two  = [
     "baby-maker",
     "girl",
     "goddess",
@@ -116,14 +116,14 @@ feminineNounsTwo  = [
     "woman",
 ]
 
-masculineNounsTwo = [
+masculine_nouns_two = [
     "alpha male",
     "beefcake",
     "dude",
     "god",
 ]
 
-neutralNounsTwo = [
+neutral_nouns_two = [
     "badass",
     "baller",
     "being",
@@ -152,5 +152,5 @@ neutralNounsTwo = [
     "watermelon",
 ]
 
-feminineNounsTwo += neutralNounsTwo
-masculineNounsTwo += neutralNounsTwo
+feminine_nouns_two += neutral_nouns_two
+masculine_nouns_two += neutral_nouns_two

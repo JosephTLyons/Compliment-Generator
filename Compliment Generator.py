@@ -3,73 +3,70 @@ from Words import *
 from random import randint
 from Tkinter import *
 
-# Set up main window settings
-master = Tk()
-master.title ("Compliment Generator")
-master.resizable(width = FALSE, height = FALSE)
 
-def femaleOption():
-    maleCheckbox.deselect()
+class ComplimentGenerator:
+    def __init__(self):
+        self.set_up_main_window()
+        self.create_components()
+        self.add_gui_components_to_window()
 
-def maleOption():
-    femaleCheckbox.deselect()
+        self.female_checkbox.select()
 
-# Create name label
-nameLabel = Label(master, text = "Name (optional): ")
+        self.master.mainloop()
 
-# Create name entry box
-nameTextEntry = Entry(master, justify = 'center')
+    def set_up_main_window(self):
+        self.master = Tk()
+        self.master.title ("Compliment Generator")
+        self.master.resizable(width=False, height=False)
 
-# Create female checkbox
-femaleIsChecked = BooleanVar()
-femaleCheckbox = Checkbutton(master, text = "Female", command = femaleOption, variable = femaleIsChecked)
-femaleCheckbox.select()
+    def create_components(self):
+        self.name_label = Label(self.master, text="Name (optional): ")
+        self.name_text_entry = Entry(self.master, justify="center")
 
-#Create male checkbox
-maleCheckbox = Checkbutton(master, text = "Male", command = maleOption)
+        self.female_is_checked = IntVar()
+        self.female_checkbox = Checkbutton(self.master, text="Female", variable=self.female_is_checked)
+        self.male_checkbox = Checkbutton(self.master, text="Male")
 
-# Create compliment label
-complimentLabel = Label(master, text = "", width = 50)
+        self.female_checkbox.config(command=self.male_checkbox.deselect)
+        self.male_checkbox.config(command=self.female_checkbox.deselect)
 
-def PrintCompliment():
-    feminineNounsOneRandInt  = randint(0, len(feminineNounsOne) - 1)
-    masculineNounsOneRandInt = randint(0, len(masculineNounsOne) - 1)
-    adverbsRandInt           = randint(0, len(adverbs) - 1)
-    adjectiveRandInt         = randint(0, len(adjectives) - 1)
-    feminineNounsTwoRandInt  = randint(0, len(feminineNounsTwo) - 1)
-    masculineNounsTwoRandInt = randint(0, len(masculineNounsTwo) - 1)
+        self.compliment_button = Button(self.master, text="Compliment", width="10", command=self.print_compliment)
+        self.compliment_label = Label(self.master, text="", width=50)
 
-    complimentText = "("
+    def add_gui_components_to_window(self):
+        self.name_label.grid(row=1, column=1, columnspan=2)
+        self.name_text_entry.grid(row=2, column=1, columnspan=2)
+        self.female_checkbox.grid(row=3, column=1)
+        self.male_checkbox.grid(row=3, column=2)
+        self.compliment_button.grid(row=4, column=1, columnspan=2)
+        self.compliment_label.grid(row=5, column=1, columnspan=2)
 
-    # If no name is specified, use a default noun
-    if len(nameTextEntry.get()) == 0:
-        if femaleIsChecked.get():
-            complimentText += feminineNounsOne[feminineNounsOneRandInt]
+    def print_compliment(self):
+        feminine_nouns_one_rand_int = randint(0, len(feminine_nouns_one) - 1)
+        masculine_nouns_one_rand_int = randint(0, len(masculine_nouns_one) - 1)
+        adverbs_rand_int = randint(0, len(adverbs) - 1)
+        adjective_rand_int = randint(0, len(adjectives) - 1)
+        feminine_nouns_two_rand_int = randint(0, len(feminine_nouns_two) - 1)
+        masculine_nouns_two_rand_int = randint(0, len(feminine_nouns_two) - 1)
+
+        if self.female_is_checked.get():
+            noun_one = feminine_nouns_one[feminine_nouns_one_rand_int]
+            noun_two = feminine_nouns_two[feminine_nouns_two_rand_int]
         else:
-            complimentText += masculineNounsOne[masculineNounsOneRandInt]
-    else:
-        complimentText = "(" + nameTextEntry.get()
+            noun_one = masculine_nouns_one[masculine_nouns_one_rand_int]
+            noun_two = feminine_nouns_two[masculine_nouns_two_rand_int]
 
-    complimentText += "), you are a(n) (" + adverbs[adverbsRandInt] + ") (" + adjectives[adjectiveRandInt] + ") ("
+        if len(self.name_text_entry.get()) != 0:
+            noun_one = self.name_text_entry.get()
 
-    if femaleIsChecked.get():
-        complimentText += feminineNounsTwo[feminineNounsTwoRandInt]
-    else:
-        complimentText += masculineNounsTwo[masculineNounsTwoRandInt]
+        compliment_text = "({}), you are a(n) ({}) ({}) ({}).".format(
+            noun_one,
+            adverbs[adverbs_rand_int],
+            adjectives[adjective_rand_int],
+            noun_two
+        )
 
-    complimentText += ")."
+        self.compliment_label.config(text=compliment_text)
 
-    complimentLabel.config(text = complimentText)
 
-# Create compliment button
-complimentButton = Button(master, text = "Compliment", width = "10", command = PrintCompliment)
-
-# Add GUI components
-nameLabel.grid(row = 1, column = 1, columnspan = 2)
-nameTextEntry.grid(row = 2, column = 1, columnspan = 2)
-femaleCheckbox.grid(row = 3, column = 1)
-maleCheckbox.grid(row = 3, column = 2)
-complimentButton.grid(row = 4, column = 1, columnspan = 2)
-complimentLabel.grid(row = 5, column = 1, columnspan = 2)
-
-master.mainloop()
+ComplimentGenerator()
