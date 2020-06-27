@@ -45,10 +45,8 @@ def PrintCompliment():
     if len(nameTextEntry.get()) == 0:
         if femaleIsChecked.get():
             complimentText += feminineNounsOne[feminineNounsOneRandInt]
-
         else:
             complimentText += masculineNounsOne[masculineNounsOneRandInt]
-
     else:
         complimentText = "(" + nameTextEntry.get()
 
@@ -56,7 +54,6 @@ def PrintCompliment():
 
     if femaleIsChecked.get():
         complimentText += feminineNounsTwo[feminineNounsTwoRandInt]
-
     else:
         complimentText += masculineNounsTwo[masculineNounsTwoRandInt]
 
